@@ -25,7 +25,7 @@ def getUserDomain(url: str):
 async def getUserId(domain: str):
     url = "https://api.vk.com/method/utils.resolveScreenName"
     params = {
-        "access_token": 'b3dcd37bb3dcd37bb3dcd37b9fb0ec6657bb3dcb3dcd37bdbcaeb2bed76c4982af9d199',
+        "access_token": ...,
         "screen_name": domain,
         "v": "5.199"
     }
@@ -44,7 +44,7 @@ def getPostId(url: str):
 async def getPostsInv(domain: str, count: int, offset: int = 0):
     url = "https://api.vk.com/method/wall.get"
     params = {
-        "access_token": 'b3dcd37bb3dcd37bb3dcd37b9fb0ec6657bb3dcb3dcd37bdbcaeb2bed76c4982af9d199',
+        "access_token": ...,
         "domain": domain,
         "offset": offset,
         "count": count,
@@ -65,7 +65,7 @@ async def getCommentsInv(owner_id: int, post_id: int, count: int, offset: int = 
     url = "https://api.vk.com/method/wall.getComments"
     if comment_id is not None:
         params = {
-            "access_token": 'b3dcd37bb3dcd37bb3dcd37b9fb0ec6657bb3dcb3dcd37bdbcaeb2bed76c4982af9d199',
+            "access_token": ...,
             "owner_id": owner_id,
             "post_id": post_id,
             "need_likes": 1,
